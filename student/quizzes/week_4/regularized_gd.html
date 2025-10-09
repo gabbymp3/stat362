@@ -3369,7 +3369,7 @@ window.Quarto = {
 <li><strong>Scikit-learn</strong>: Professional ML implementations (Lasso, Ridge, StandardScaler)</li>
 <li><strong>Math &amp; Copy</strong>: Utility functions for mathematical operations and object copying</li>
 </ul>
-<div id="393fb92e-6a73-44b8-97c2-4ee7aa19345a" class="cell" data-execution_count="3">
+<div id="393fb92e-6a73-44b8-97c2-4ee7aa19345a" class="cell" data-execution_count="1">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -3390,7 +3390,7 @@ window.Quarto = {
 <li><strong>Noisy target function</strong> (sine wave + random noise)</li>
 </ul>
 <p>This setup perfectly demonstrates why regularization is essential in machine learning!</p>
-<div id="fda1d729" class="cell" data-execution_count="4">
+<div id="fda1d729" class="cell" data-execution_count="2">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Define input array with angles from 60deg to 300deg converted to radians</span></span>
@@ -3411,7 +3411,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div id="5df268c1" class="cell" data-execution_count="5">
+<div id="5df268c1" class="cell" data-execution_count="3">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>,<span class="dv">16</span>):  <span class="co">#power of 1 is already there</span></span>
@@ -3442,7 +3442,7 @@ window.Quarto = {
 4  3.401299e-08  7.123663e-09  1.491976e-09  3.124788e-10  6.544541e-11  </code></pre>
 </div>
 </div>
-<div id="428e4dd3" class="cell" data-execution_count="6">
+<div id="428e4dd3" class="cell" data-execution_count="4">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># split into train and test </span></span>
@@ -3459,7 +3459,7 @@ window.Quarto = {
 Number of observations in the test data: 113</code></pre>
 </div>
 </div>
-<div id="5295b771" class="cell" data-execution_count="7">
+<div id="5295b771" class="cell" data-execution_count="5">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># split feature and target</span></span>
@@ -3469,7 +3469,7 @@ Number of observations in the test data: 113</code></pre>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>y_test <span class="op">=</span> test[<span class="st">&#39;y&#39;</span>].values</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="d1222509" class="cell" data-execution_count="8">
+<div id="d1222509" class="cell" data-execution_count="6">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>plt.plot(X_train[:,<span class="dv">0</span>], y_train, <span class="st">&#39;b.&#39;</span>)   </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -3502,7 +3502,7 @@ Number of observations in the test data: 113</code></pre>
 <ul>
 <li>The model has more parameters (15) than training examples (~7-12)</li>
 </ul>
-<div id="29f67140" class="cell" data-execution_count="9">
+<div id="29f67140" class="cell" data-execution_count="7">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># do standardization</span></span>
@@ -3524,7 +3524,7 @@ Number of observations in the test data: 113</code></pre>
 <li><code>gradient_descent_matrix()</code>: Main optimization loop</li>
 <li><code>compute_gradient_matrix()</code>: Compute gradients efficiently</li>
 </ul>
-<div id="b77bd94d" class="cell" data-execution_count="10">
+<div id="b77bd94d" class="cell" data-execution_count="8">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compute_cost_matrix(X, y, w):</span>
@@ -3554,7 +3554,7 @@ Number of observations in the test data: 113</code></pre>
 <span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> cost</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="e76c04fd" class="cell" data-execution_count="11">
+<div id="e76c04fd" class="cell" data-execution_count="9">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compute_gradient_matrix(X, y, w):</span>
@@ -3601,7 +3601,7 @@ Number of observations in the test data: 113</code></pre>
 <ul>
 <li>Track training cost at each iteration</li>
 </ul>
-<div id="4a36c343" class="cell" data-execution_count="12">
+<div id="4a36c343" class="cell" data-execution_count="10">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> gradient_descent_matrix(X, y, X_test, y_test, w_in, alpha, num_iters): </span>
@@ -3653,7 +3653,7 @@ Number of observations in the test data: 113</code></pre>
 <li>Data: Use standardized features (<code>X_train_scaled</code>, <code>X_test_scaled</code>)</li>
 <li>Iterations: <code>num_iters = 50000</code> (ensure full convergence)</li>
 </ul>
-<div id="d7a34a06" class="cell" data-execution_count="13">
+<div id="d7a34a06" class="cell" data-execution_count="11">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Do the gradient descent with the scaled data</span></span>
@@ -3726,7 +3726,7 @@ w found by gradient descent: [-0.09443169  1.45101057 -3.31138286 -1.46580412  0
  -0.38303082 -0.53245842 -0.64349206 -0.72525638]</code></pre>
 </div>
 </div>
-<div id="f55dfe84" class="cell" data-execution_count="14">
+<div id="f55dfe84" class="cell" data-execution_count="12">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># putting the learning curve to show the overfitting issue of the model</span></span>
@@ -3755,7 +3755,7 @@ w found by gradient descent: [-0.09443169  1.45101057 -3.31138286 -1.46580412  0
 </div>
 </div>
 </div>
-<div id="9a719dc3" class="cell" data-execution_count="15">
+<div id="9a719dc3" class="cell" data-execution_count="13">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot the model on the train and test data</span></span>
@@ -3777,7 +3777,7 @@ w found by gradient descent: [-0.09443169  1.45101057 -3.31138286 -1.46580412  0
 </div>
 </div>
 </div>
-<div id="6164dbee" class="cell" data-execution_count="16">
+<div id="6164dbee" class="cell" data-execution_count="14">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># output the final RMSE for the training and test set</span></span>
@@ -3870,7 +3870,7 @@ W := W - \alpha \left( \frac{1}{m} X^T (XW - y) + \lambda W \right)    \tag{9}
 <li><strong>Implementation</strong>: Use vectorization for efficiency</li>
 </ul>
 <p><strong>Key Mathematical Changes:</strong>- <strong>Gradient</strong>: Add λ * w regularization term to standard gradient - <strong>Cost function</strong>: Add λ/2 * ||w||₂² penalty term</p>
-<div id="330fd198" class="cell" data-execution_count="17">
+<div id="330fd198" class="cell" data-execution_count="15">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compute_cost_matrix_reg_l2(X, y, w, lambda_reg):</span>
@@ -3907,7 +3907,7 @@ W := W - \alpha \left( \frac{1}{m} X^T (XW - y) + \lambda W \right)    \tag{9}
 <span id="cb19-32"><a href="#cb19-32" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> cost</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="980326ad" class="cell" data-execution_count="18">
+<div id="980326ad" class="cell" data-execution_count="16">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to calculate the gradient with L2 regularization</span></span>
@@ -3936,7 +3936,7 @@ W := W - \alpha \left( \frac{1}{m} X^T (XW - y) + \lambda W \right)    \tag{9}
 <span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="0f214e5d" class="cell" data-execution_count="19">
+<div id="0f214e5d" class="cell" data-execution_count="17">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to perform gradient descent with L2 regularization</span></span>
@@ -3980,7 +3980,7 @@ W := W - \alpha \left( \frac{1}{m} X^T (XW - y) + \lambda W \right)    \tag{9}
 <span id="cb21-39"><a href="#cb21-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> w, J_history, test_J_history</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="816463b8" class="cell" data-execution_count="20">
+<div id="816463b8" class="cell" data-execution_count="18">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># initialize the model parameters to 0</span></span>
@@ -4010,7 +4010,7 @@ w found by gradient descent with regularization: [-0.09443169 -0.12710524 -0.840
   0.03465799  0.00414512 -0.01991663 -0.03858886] </code></pre>
 </div>
 </div>
-<div id="2fd5d835" class="cell" data-execution_count="21">
+<div id="2fd5d835" class="cell" data-execution_count="19">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot the cost over the iterations</span></span>
@@ -4030,7 +4030,7 @@ w found by gradient descent with regularization: [-0.09443169 -0.12710524 -0.840
 </div>
 </div>
 </div>
-<div id="4ffe4e6e" class="cell" data-execution_count="22">
+<div id="4ffe4e6e" class="cell" data-execution_count="20">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># putting the above figures side by side for comparision, using subplots</span></span>
@@ -4055,18 +4055,18 @@ w found by gradient descent with regularization: [-0.09443169 -0.12710524 -0.840
 </section>
 <section id="task2-output-the-final-rmse-for-the-training-and-test-set-below-for-performance-comparision-at-the-end" class="level3" data-number="11.2">
 <h3 data-number="11.2" class="anchored" data-anchor-id="task2-output-the-final-rmse-for-the-training-and-test-set-below-for-performance-comparision-at-the-end"><span class="header-section-number">11.2</span> Task2: output the final RMSE for the training and test set below for performance comparision at the end</h3>
-<div id="55f35cbc" class="cell" data-execution_count="23">
+<div id="55f35cbc" class="cell" data-execution_count="21">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># output the final RMSE for the training and test set</span></span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>gd_l2_rmse_train <span class="op">=</span> math.sqrt(J_history[<span class="op">-</span><span class="dv">1</span>])</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>gd_l2_rmse_test <span class="op">=</span> math.sqrt(test_J_history[<span class="op">-</span><span class="dv">1</span>])</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>gd_l2_rmse_train <span class="op">=</span> math.sqrt((X_train_scaled_1 <span class="op">@</span> GD_L2_w <span class="op">-</span> y_train).T <span class="op">@</span> (X_train_scaled_1 <span class="op">@</span> GD_L2_w <span class="op">-</span> y_train) <span class="op">/</span> (<span class="dv">2</span><span class="op">*</span>X_train_scaled_1.shape[<span class="dv">0</span>]))</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>gd_l2_rmse_test <span class="op">=</span> math.sqrt((X_test_scaled_1 <span class="op">@</span> GD_L2_w <span class="op">-</span> y_test).T <span class="op">@</span> (X_test_scaled_1 <span class="op">@</span> GD_L2_w <span class="op">-</span> y_test) <span class="op">/</span> (<span class="dv">2</span><span class="op">*</span>X_test_scaled_1.shape[<span class="dv">0</span>]))</span>
 <span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Final training RMSE: &quot;</span>,gd_l2_rmse_train)</span>
 <span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Final test RMSE: &quot;</span>, gd_l2_rmse_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>Final training RMSE:  0.09887132336691744
-Final test RMSE:  0.2559469565483747</code></pre>
+<pre><code>Final training RMSE:  0.0857852789515362
+Final test RMSE:  0.2511820456697551</code></pre>
 </div>
 </div>
 </section>
@@ -4115,7 +4115,7 @@ W := W - \alpha \left( \frac{1}{m} X^T (XW - y) + \lambda \, \text{sgn}(W) \righ
 <li><p><strong>Cost function</strong>: Add λ * ||w||₁ penalty term</p></li>
 <li><p><strong>Gradient</strong>: Add λ * sign(w) to standard gradient</p></li>
 </ul>
-<div id="3453c9e9" class="cell" data-execution_count="24">
+<div id="3453c9e9" class="cell" data-execution_count="22">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to calculate the cost with L1 regularization</span></span>
@@ -4141,7 +4141,7 @@ W := W - \alpha \left( \frac{1}{m} X^T (XW - y) + \lambda \, \text{sgn}(W) \righ
 <span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> cost</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="c1c4ee32" class="cell" data-execution_count="25">
+<div id="c1c4ee32" class="cell" data-execution_count="23">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to calculate the gradient with L1 regularization</span></span>
@@ -4168,7 +4168,7 @@ W := W - \alpha \left( \frac{1}{m} X^T (XW - y) + \lambda \, \text{sgn}(W) \righ
 <span id="cb29-22"><a href="#cb29-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> dj_dw</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="d8a3b2ae" class="cell" data-execution_count="26">
+<div id="d8a3b2ae" class="cell" data-execution_count="24">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to perform gradient descent with L1 regularization</span></span>
@@ -4212,7 +4212,7 @@ W := W - \alpha \left( \frac{1}{m} X^T (XW - y) + \lambda \, \text{sgn}(W) \righ
 <span id="cb30-39"><a href="#cb30-39" aria-hidden="true" tabindex="-1"></a>       </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="6ddf6acd" class="cell" data-execution_count="27">
+<div id="6ddf6acd" class="cell" data-execution_count="25">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># initialize the model parameters to 0</span></span>
@@ -4243,7 +4243,7 @@ w found by gradient descent with L1 regularization: [-9.44316904e-02 -2.42660402
   4.08788838e-04  5.49690995e-04  4.09960494e-04  6.91874326e-04] </code></pre>
 </div>
 </div>
-<div id="d506701d" class="cell" data-execution_count="28">
+<div id="d506701d" class="cell" data-execution_count="26">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot the cost over the iterations</span></span>
@@ -4264,7 +4264,7 @@ w found by gradient descent with L1 regularization: [-9.44316904e-02 -2.42660402
 </div>
 </div>
 </div>
-<div id="d45f7d54" class="cell" data-execution_count="29">
+<div id="d45f7d54" class="cell" data-execution_count="27">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># putting the above figures side by side for comparision, using subplots</span></span>
@@ -4289,18 +4289,18 @@ w found by gradient descent with L1 regularization: [-9.44316904e-02 -2.42660402
 </section>
 <section id="task4-output-the-final-rmse-for-the-training-and-test-set-below-for-performance-comparision-at-the-end" class="level3" data-number="12.3">
 <h3 data-number="12.3" class="anchored" data-anchor-id="task4-output-the-final-rmse-for-the-training-and-test-set-below-for-performance-comparision-at-the-end"><span class="header-section-number">12.3</span> Task4: output the final RMSE for the training and test set below for performance comparision at the end</h3>
-<div id="974a3e6d" class="cell" data-execution_count="30">
+<div id="974a3e6d" class="cell" data-execution_count="28">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># output the final RMSE for the training and test set</span></span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>gd_l1_rmse_train <span class="op">=</span> math.sqrt(J_history[<span class="op">-</span><span class="dv">1</span>])</span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>gd_l1_rmse_test <span class="op">=</span> math.sqrt(test_J_history[<span class="op">-</span><span class="dv">1</span>])</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>gd_l1_rmse_train <span class="op">=</span> math.sqrt((X_train_scaled_1 <span class="op">@</span> GD_L1_w <span class="op">-</span> y_train).T <span class="op">@</span> (X_train_scaled_1 <span class="op">@</span> GD_L1_w <span class="op">-</span> y_train) <span class="op">/</span> (<span class="dv">2</span><span class="op">*</span>X_train_scaled_1.shape[<span class="dv">0</span>]))</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>gd_l1_rmse_test <span class="op">=</span> math.sqrt((X_test_scaled_1 <span class="op">@</span> GD_L1_w <span class="op">-</span> y_test).T <span class="op">@</span> (X_test_scaled_1 <span class="op">@</span> GD_L1_w <span class="op">-</span> y_test) <span class="op">/</span> (<span class="dv">2</span><span class="op">*</span>X_test_scaled_1.shape[<span class="dv">0</span>]))</span>
 <span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Final training RMSE: &quot;</span>,gd_l1_rmse_train)</span>
 <span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Final test RMSE: &quot;</span>, gd_l1_rmse_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>Final training RMSE:  0.12767389833293252
-Final test RMSE:  0.26200709579649717</code></pre>
+<pre><code>Final training RMSE:  0.08346816108755611
+Final test RMSE:  0.2435447142672677</code></pre>
 </div>
 </div>
 </section>
@@ -4326,7 +4326,7 @@ Final test RMSE:  0.26200709579649717</code></pre>
 <li><p>Use <code>Ridge(alpha=0.004, max_iter=10000)</code> for fair comparison- Extract learned parameters using <code>.coef_</code> and <code>.intercept_</code></p></li>
 <li><p>Fit on scaled training data: <code>X_train_scaled</code>, <code>y_train</code>- Predict on both training and test sets</p></li>
 </ul>
-<div id="a125153a" class="cell" data-execution_count="31">
+<div id="a125153a" class="cell" data-execution_count="29">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># use Ridge regression from sklearn to learn the model parameters</span></span>
@@ -4352,7 +4352,7 @@ Learned parameters: [ 0.68317146 -2.07864713 -1.01132877  0.1916362   0.76887686
 </section>
 <section id="task6-output-the-rmse-for-the-ridge-regression" class="level3" data-number="13.2">
 <h3 data-number="13.2" class="anchored" data-anchor-id="task6-output-the-rmse-for-the-ridge-regression"><span class="header-section-number">13.2</span> Task6: Output the RMSE for the Ridge regression</h3>
-<div id="b4800e0c" class="cell" data-execution_count="32">
+<div id="b4800e0c" class="cell" data-execution_count="30">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># output the final RMSE for the training and test set</span></span>
@@ -4378,7 +4378,7 @@ Final test RMSE:  0.25930279992193206</code></pre>
 <li><p>Apply to standardized data for proper regularization</p></li>
 </ul>
 <p><strong>Key Analysis</strong>: Count how many coefficients are exactly zero</p>
-<div id="854ecc95" class="cell" data-execution_count="33">
+<div id="854ecc95" class="cell" data-execution_count="31">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use lasso regression from sklearn to learn the model parameters</span></span>
@@ -4402,7 +4402,7 @@ Learned parameters: [-0.         -1.27800488 -0.          0.          0.        
 <section id="task-8-lasso-performance-analysis" class="level3" data-number="13.4">
 <h3 data-number="13.4" class="anchored" data-anchor-id="task-8-lasso-performance-analysis"><span class="header-section-number">13.4</span> Task 8: Lasso Performance Analysis</h3>
 <p><strong>Evaluation Requirements:</strong> - Calculate and output final RMSE for both training and test sets - <strong>Sparsity Analysis</strong>: Count and report how many coefficients are exactly zero - <strong>Feature Selection</strong>: Identify which polynomial terms were eliminated - <strong>Compare</strong>: How does Lasso sparsity compare to your custom L1 implementation?</p>
-<div id="f117ffcb" class="cell" data-execution_count="34">
+<div id="f117ffcb" class="cell" data-execution_count="32">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># output the final RMSE for the training and test set</span></span>
@@ -4461,7 +4461,7 @@ Polynomial terms (x^i) eliminated for i: [ 1  3  4  5  6  9 10 11 12 13 14 15]</
 <li><p>Custom L2 Regularization (Ridge)- Sklearn Lasso Regression</p></li>
 <li><p>Custom L1 Regularization (Lasso) - Sklearn Ridge Regression</p></li>
 </ul>
-<div id="6b487a2e" class="cell" data-execution_count="35">
+<div id="6b487a2e" class="cell" data-execution_count="33">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co">#putting all the parameters from the above models in a dataframe, adding the bias term to the model parameters</span></span>
@@ -4475,7 +4475,7 @@ Polynomial terms (x^i) eliminated for i: [ 1  3  4  5  6  9 10 11 12 13 14 15]</
 <span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="35">
+<div class="cell-output cell-output-display" data-execution_count="33">
 <div>
 
 
@@ -4652,11 +4652,11 @@ Polynomial terms (x^i) eliminated for i: [ 1  3  4  5  6  9 10 11 12 13 14 15]</
 <p><strong>Expected Insights</strong>: Regularized models should show better generalization!</p>
 <ol type="1">
 <li>Which method has the best test performance? The method with the best test performance is the vanilla gradient descent - test RMSE is the lowest at about 0.22.</li>
-<li>Which method shows least overfitting (smallest gap)? The method with the least overfitting is the custom L1 regularization - the generalization gap is the lowest at about 0.13.</li>
-<li>How do custom implementations compare to sklearn? Custom L1 outperforms sklearn Lasso in test performance and generalization gap. Custom L2 slightly outperforms sklearn Ridge in test performance and generalization gap as well. Sklearn L1 and L2 both slighlty outperform custom L1 and L2, respectively, in terms of training RMSE.</li>
+<li>Which method shows least overfitting (smallest gap)? The method with the least overfitting is the custom L1 regularization - the generalization gap is the lowest at about 0.16.</li>
+<li>How do custom implementations compare to sklearn? Custom L1 outperforms sklearn Lasso in train performance, test performance and generalization gap. Custom L2 slightly outperforms sklearn Ridge in test performance and generalization gap as well. Sklearn L2 slightly outperform custom L2 in terms of training RMSE.</li>
 <li>When would you choose L1 vs L2 regularization? L1 regularization is useful when we want to perform feature selection, while L2 regularization is useful when we want to shrink the coefficients of all features.</li>
 </ol>
-<div id="9d0720aa" class="cell" data-execution_count="37">
+<div id="9d0720aa" class="cell" data-execution_count="34">
 <details open class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># putting all the RMSE values in a dataframe</span></span>
@@ -4671,7 +4671,7 @@ Polynomial terms (x^i) eliminated for i: [ 1  3  4  5  6  9 10 11 12 13 14 15]</
 <span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>df.head()</span>
 <span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="37">
+<div class="cell-output cell-output-display" data-execution_count="34">
 <div>
 
 
@@ -4690,25 +4690,25 @@ Polynomial terms (x^i) eliminated for i: [ 1  3  4  5  6  9 10 11 12 13 14 15]</
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Train RMSE</td>
 <td>0.027505</td>
-<td>0.127674</td>
+<td>0.083468</td>
 <td>0.117474</td>
-<td>0.098871</td>
+<td>0.085785</td>
 <td>0.068598</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Test RMSE</td>
 <td>0.223883</td>
-<td>0.262007</td>
+<td>0.243545</td>
 <td>0.343283</td>
-<td>0.255947</td>
+<td>0.251182</td>
 <td>0.259303</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Generalization Gap</td>
 <td>0.196378</td>
-<td>0.134333</td>
+<td>0.160077</td>
 <td>0.225809</td>
-<td>0.157076</td>
+<td>0.165397</td>
 <td>0.190705</td>
 </tr>
 <tr class="even">
